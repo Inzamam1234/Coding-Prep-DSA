@@ -67,12 +67,27 @@ public class Main {
         for(int i = 0; i < arr.length; i++){
             actualsum += arr[i];
         }
+        return expectsum - actualsum;
+    }
+
+    static int findXOR(int[] arr) {
+        int xorResult = 0;
+
+        for (int num : arr) {
+            xorResult ^= num;
+        }
+
+        return xorResult;
     }
     public static void main(String[] args) {
         
         int arr[] = {23,4,5,67,89,2};
+        int arr2[] = {1,3,4,5,6};
+        int arr3[] = {2,3,4,3,2};
         System.out.println(secondLargest(arr));
         System.out.println(secondsmallest(arr));
         findduplicate(arr);
+        System.out.println(missingNumber(arr2));
+        System.out.println(findXOR(arr3));
     }
 }
