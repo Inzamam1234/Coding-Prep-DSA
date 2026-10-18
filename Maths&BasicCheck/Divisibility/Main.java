@@ -1,5 +1,3 @@
-package Divisibility;
-
 public class Main {
     
     public static int countDivisors(int n){
